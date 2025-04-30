@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href=".src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-[#131921] text-white p-4 flex items-center justify-between flex-wrap">
+    <div class="flex items-center space-x-4">
+      <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" class="h-8" />
+    </div>
+    <input type="text" placeholder="Search Amazon" class="w-full md:w-1/2 p-2 rounded-md text-black mt-2 md:mt-0" />
+    <nav class="flex space-x-4 text-sm mt-2 md:mt-0">
+      <a href="signin.html" class="hover:underline">Sign In</a>
+      <a href="orders.html" class="hover:underline">Orders</a>
+      <a href="cart.html" class="hover:underline">Cart 🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-yellow-400 text-black text-center p-8">
+    <h1 class="text-3xl font-bold mb-2">Welcome to Amazon </h1>
+    <p>Shop your favorite gadgets, fashion, and more at amazing deals!</p>
+  </section>
+
+  <!-- Product Grid -->
+  <main class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <!-- Product Cards -->
+    <div class="product-card">
+      <img src="Images/headphones.jpg" alt="Headphones" class="product-img" />
+      <h2 class="product-title">Wireless Headphones</h2>
+      <p class="product-desc">Noise Cancelling Bluetooth</p>
+      <p class="product-price">₹2,499</p>
+      <p class="product-rating">⭐⭐⭐⭐☆ (1200)</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/smartphone.jpg" alt="Smartphone" class="product-img" />
+      <h2 class="product-title"> Iphone 14 Pro</h2>
+      <p class="product-desc">8GB RAM, 512GB Storage</p>
+      <p class="product-price">₹84,999</p>
+      <p class="product-rating">⭐⭐⭐⭐☆ (18,240)</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/shoes.jpg" alt="Shoes" class="product-img" />
+      <h2 class="product-title">Nike Running Shoes</h2>
+      <p class="product-desc">Comfort fit for men</p>
+      <p class="product-price">₹3,499</p>
+      <p class="product-rating">⭐⭐⭐☆☆ (560)</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/watch.jpg" alt="Wrist Watch" class="product-img" />
+      <h2 class="product-title">Fossil Analog Watch</h2>
+      <p class="product-desc">Brown Leather Strap</p>
+      <p class="product-price">₹7,999</p>
+      <p class="product-rating">⭐⭐⭐⭐⭐ (920)</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="Images/Laptop.jpg" alt="Laptop" class="product-img" />
+      <h2 class="product-title">HP Pavilion x360</h2>
+      <p class="product-desc">Intel i5 12th Gen, Touchscreen</p>
+      <p class="product-price">₹64,990</p>
+      <p class="product-rating">⭐⭐⭐⭐☆ (2,100)</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61eXksFcVwL._AC_UY218_.jpg" alt="Backpack" class="product-img" />
+      <h2 class="product-title">Skybags Backpack</h2>
+      <p class="product-desc">30L Casual School Bag</p>
+      <p class="product-price">₹1,099</p>
+      <p class="product-rating">⭐⭐⭐☆☆ (1,700)</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#232F3E] text-white text-center py-4 mt-10">
+    <p>&copy; 2025 Amazon Clone by Abhishek Paliwal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
